@@ -17,7 +17,7 @@ docker build --rm -t lunchbox/pyml:ubuntu_1804.v1 .
 
 Step #3: Run docker first time, bind port, give name for container
 ```
-docker run -p 127.0.0.1:8085:8085/tcp -t -i --name LunchBox-pyML lunchbox/pyml:ubuntu_1804.v1 
+docker run -p 127.0.0.1:8086:8086/tcp -t -i --name LunchBox-pyML lunchbox/pyml:ubuntu_1804.v1 
 ```
 
 Step #4: Restart stopped container.. No need to give port as it is already configured n above run command
