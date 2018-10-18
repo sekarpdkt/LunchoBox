@@ -1,7 +1,7 @@
 # LunchoBox
 ---
 
-## How to use
+## How to use?
 
 Step #1: First clone the repository using following command
 
@@ -24,6 +24,35 @@ Step #4: Restart stopped container.. No need to give port as it is already confi
 
 ```
 docker start -i LunchBox-pyML
+```
+
+## How to validate?
+
+Once docker is running, try to access
+
+http://localhost:8086/SMS/?SMS=Thia%20is%20not%20a%20spam
+
+or
+
+http://localhost:8086
+
+## Quick diagnosis
+
+Login to docker using following command
+
+```
+docker exec -it LunchBox-pyML /bin/bash
+```
+Once inside the docker root prompt check logs of uwsgi, ngnix and flask
+
+```
+#nginx logs
+tail -f /var/log/nginx/error.log
+tail -f /var/log/nginx/access.log
+#uwsgi's emperor log
+tail -f /var/log/uwsgi/emperor.log 
+#your application log
+tail -f /var/log/uwsgi/SMSHamSpam.log
 ```
 
 ## Architecure
