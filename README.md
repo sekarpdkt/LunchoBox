@@ -30,5 +30,7 @@ docker start -i LunchBox-pyML
 This is based on various best practices available, like
 
 https://code.luasoftware.com/tutorials/nginx/setup-nginx-and-uwsgi-for-flask-on-ubuntu/
+
 http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+
 https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/
