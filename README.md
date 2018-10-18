@@ -11,6 +11,7 @@ git clone https://github.com/sekarpdkt/LunchoBox.git
 
 Step #2: Build the docker from scratch. Get into that directory where you have dockerfile and execute following command
 ```
+cd LunchoBox/LunchBox-MachineLearning_Ubuntu1804_v1
 docker build --rm -t lunchbox/pyml:ubuntu_1804.v1 .
 ```
 
