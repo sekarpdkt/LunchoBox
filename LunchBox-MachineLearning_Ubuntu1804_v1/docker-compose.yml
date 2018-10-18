@@ -1,0 +1,6 @@
+version: '2'
+services:
+  web:
+    container_name: LunchBox-pyML
+    image: lunchbox/pyml:ubuntu_1804.v1
+    build: ./
